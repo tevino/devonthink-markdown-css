@@ -1,0 +1,31 @@
+name: Auto Update
+
+on:
+  schedule:
+    - cron:  '* * * * *'
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Generate
+        run: ./generate.sh
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add github-markdown.css
+          git commit -m "Auto update"
+      - name: Push back
+        uses: ad-m/github-push-action@v0.5.0
+        with:
+          # Token for the repo. Can be passed in using ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Destination branch to push changes
+          branch: master
+          # Determines if force push is used
+          force: false
