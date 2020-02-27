@@ -1,6 +1,6 @@
 # DEVONthink Markdown CSS
 
-[![Build Status](https://drone.tevinzhang.com:4/api/badges/tevino/devonthink-markdown-css/status.svg)](https://drone.tevinzhang.com:4/tevino/devonthink-markdown-css)
+![Auto Update](https://github.com/tevino/devonthink-markdown-css/workflows/Auto%20Update/badge.svg)
 
 
 Automatically updated markdown style sheet adjusted for DEVONthink.
