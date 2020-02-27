@@ -19,7 +19,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add github-markdown.css
-          git commit -m "Auto update"
+          git commit -m "Auto update" || true
       - name: Push back
         uses: ad-m/github-push-action@v0.5.0
         with:
