@@ -18,6 +18,12 @@ In DEVONthink:
 https://cdn.jsdelivr.net/gh/tevino/devonthink-markdown-css@master/github-markdown.css
 ```
 
+or this one with white background, if you use dark mode.
+
+```HTML
+https://cdn.jsdelivr.net/gh/tevino/devonthink-markdown-css@master/github-markdown-white.css
+```
+
 ![Screenshot](https://raw.githubusercontent.com/tevino/devonthink-markdown-css/master/screenshot.png)
 
 ### Use Current Version, No Update
